@@ -103,7 +103,7 @@ Arguments are parameters that are passed into Subroutines and Functions as varia
  
  Sub PrintName(first_name as string)
 
-'print the hello message
+'print the hello message <br>
  msgbox "Hello " + first_name
  
  End Sub
