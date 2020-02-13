@@ -39,8 +39,8 @@ e.g. of snake case: first_name, last_name, phone_number, graduation_date
 
 * Variable names should be descriptive without being too long. For example it will be easier for you to understand what the variable first_name is used for than a variable defined as f
 
-**Declaring Variables in VBA**
-*Dim* is the vba reserved word used to declare a variable for use. Dim is actually an abbreviation for the work dimension. In VBA we declare a variable as follows: <br>
+**Declaring Variables in VBA** - using *Dim* keyword <br>
+*Dim* is the vba reserved word used to declare a variable. Dim is actually an abbreviation for the word *dimension*. In VBA we declare a variable as follows: <br>
 
 >
 > Dim variable_name as variable_type
@@ -64,7 +64,8 @@ Comments are used in VBA to give hints, guidance and documentation for what our 
 
 Anything we type to the right of the *" ' "* symbol, the VBA interpreter will treat as a comment
 
-##### **Printing Messages**
+##### **Printing Messages** - using the *MsgBox* keyword
+In VBA, we use the *MsgBox* built-in function to print / output a message to the screen. It takes one mandatory input parameter for a message string, as well as a number of other optional parameters 
 
 
 
@@ -94,20 +95,19 @@ In between the *Function* and the *End Function* lines, we write the vba stateme
 Arguments are parameters that are passed into Subroutines and Functions as variables. This helps to make code dynamic, since we can change the values we pass in as inputs. 
 
  **Example**
- Lets say we wanted a subroutine that will accept two inputs from a user: <br>
+ Lets say we wanted a subroutine that will accept one input from a user: <br>
  1. a first name
- 2. a last name
  
- We would like the subroutine to print a hello message using the person's first name and last name. <br>
+ We would like the subroutine to print a hello message using the person's first name. <br>
  So if I type *John* for the first name the program should print: <br>
- *Hello John*. How would we do this? Here is a possible answer
+ *Hello John*. How would we do this? Here is a possible solution using a subroutine<br>
  
- Sub PrintName(first_name as string)
-
-'print the hello message <br>
- msgbox "Hello " + first_name
- 
- End Sub
+ >Sub PrintName(first_name as string)
+ >
+ >'print the hello message <br>
+ >msgbox "Hello " + first_name
+ >
+ >End Sub
 
  
 
