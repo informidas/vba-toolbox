@@ -41,12 +41,12 @@ A Dim statement is the vba reserved word used to declare a variable for use. Dim
 >
 
 Here are some examples of variable declarations: <br>
-
+>
 > Dim first_name as string
 > Dim age as integer
 > Dim is_adult as boolean
 > Dim dob as date
-
+>
 
 Variables are typically declared inside of a Procedure or Function
 
