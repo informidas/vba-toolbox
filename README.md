@@ -96,7 +96,7 @@ Arguments are parameters that are passed into Subroutines and Functions as varia
 
  **Example**
  Lets say we wanted a subroutine that will accept one input from a user: <br>
- 1. a first name
+ 1. first name
  
  We would like the subroutine to print a hello message using the person's first name. <br>
  So if I type *John* for the first name the program should print: <br>
