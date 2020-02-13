@@ -25,7 +25,7 @@ A variable is a container in memory used to store values for manipulation, compa
 
 These are just a few of the more frequently used variables, However vba comes with the ability to define many other object types.
 
-When declaring a variable here a few things to keep in mind: <br>
+**When creating variable here a few things to keep in mind**: <br>
 
 * Variable names are not case sensitive (so FIRSTNAME and firstname are the same).
 
@@ -39,15 +39,7 @@ e.g. of snake case: first_name, last_name, phone_number, graduation_date
 
 * Variable names should be descriptive without being too long. For example it will be easier for you to understand what the variable first_name is used for than a variable defined as f
 
-#### **Comments**
-Comments are used in VBA to give hints, guidance and documentation for what our code is doing at different steps along the way. Comments are extremely useful when other users are trying to read our code, as well as in helping the author revisit their code some time in the future. To create a comment in VBA, we type a single apostrophe ('), followed by the actual comment. For example: <br>
-
-> 'This is my first comment
-> 'This is my second comment
-
-Anything we type to the right of the *" ' "* symbol, the VBA interpreter will treat as a comment
-
-#### **Declaring Variables in VBA**
+**Declaring Variables in VBA**
 *Dim* is the vba reserved word used to declare a variable for use. Dim is actually an abbreviation for the work dimension. In VBA we declare a variable as follows: <br>
 
 >
@@ -63,6 +55,14 @@ Here are some examples of variable declarations <br>
 >
 
 Variables are typically declared inside of a Procedure or Function
+
+#### **Comments**
+Comments are used in VBA to give hints, guidance and documentation for what our code is doing at different steps along the way. Comments are extremely useful when other users are trying to read our code, as well as in helping the author revisit their code some time in the future. To create a comment in VBA, we type a single apostrophe ('), followed by the actual comment. For example: <br>
+
+> 'This is my first comment
+> 'This is my second comment
+
+Anything we type to the right of the *" ' "* symbol, the VBA interpreter will treat as a comment
 
 ##### **Printing Messages**
 
