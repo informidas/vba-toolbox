@@ -64,7 +64,8 @@ Here are some examples of variable declarations <br>
 
 Variables are typically declared inside of a Procedure or Function
 
-##### **Printing Messages 
+##### **Printing Messages**
+
 
 
 #### **Sub**
