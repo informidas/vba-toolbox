@@ -25,14 +25,17 @@ A variable is a container in memory used to store values for manipulation, compa
 
 These are just a few of the more frequently used variables, However vba comes with the ability to define many other object types.
 
+#### **Comments**
+Comments are used in VBA to give hints, guidance and documentation for what our code is doing at different steps along the way. Comments are extremely useful when other users are trying to read our code, as well as in helping the author revisit their code some time in the future.
 
 #### **Dim** *Statement*
 A Dim statement is the vba reserved word used to declare a variable for use. Dim is actually an abbreviation for the work dimension. In VBA we declare a variable as follows: <br>
----
+
 >
 > Dim variable_name as variable_type
 >
 
+Variables are declared inside of a Procedure or Function
 
 #### **Sub**
 A subroutine (or sub) is a procedure or package of vba code consisting of one or more statements that get executed when the sub is run / called. The format for a subroutine is as follows: <br>
@@ -42,9 +45,23 @@ A subroutine (or sub) is a procedure or package of vba code consisting of one or
 >
 > End Sub
 
-In between the Sub and the End Sub lines, we write the vba statemenst to be executed. 
+In between the *Sub* and the *End Sub* lines, we write the vba statements to be executed.
+
+#### **Function**
+A Function is similar to a subroutine in structure. Typically a function is used when we would like to return a value as the direct output of the program, which can then be used by another subroutine or function. The format for declaring a Function is:
+
+>
+> Function *Name-of-Function*() as *return type* 
+>
+> End Function 
+
+In between the *Function* and the *End Function* lines, we write the vba statemenst to be executed.
+
+ Here, *return type* means the type returned by the Function. Let's look at a concrete example: <br>
+  Lets say we wanted 
+
+ 
 
 ### Best Practices
-
 
 #### Naming Variables and Objects
