@@ -109,8 +109,38 @@ Arguments are parameters that are passed into Subroutines and Functions as varia
  >
  >End Sub
 
+ If we wanted to use a Function to solve the same challenge we could do the following: <br>
  
+ > Function PrintName(first_name as string) as string
+ >    PrintName = "Hello " + first_name
+ >  return PrintName
+ > End Function 
+
+
+### Looping Structures
+Frequently when we provide a solution VBA, we need to iterate over a range of  cells, rows and columns. VBA provides Looping structures to help when we need to process a collection of cells, rows, columns and worksheets.
+
+#### For Each Next
+The for each next structure can be used when working with a collection / group of worksheets in a workbook. For example, let us say I have 5 sheets in a workbook labeled *sheet1, sheet2, sheet3, sheet4 abd sheet5*. If we needed to some kind of processing to all these sheets we could use a loop structure like this: <br>
+
+> For Each ws in Worksheets
+>  'do the processing here
+> Next ws 
+
+The *Next ws* statement is teh instruction to move to the next sheet
+
+
 
 ### Best Practices
+
+* Use comments to confirm the logic of your program 
+
+* Use Msgbox to test the value of variables that you have defined and assigned values
+
+* Use a consistent case and convention for variable declarations
+
+* Use descriptive names for variables
+
+* Initialize numeric variables (i.e. those used for counters and loops
 
 #### Naming Variables and Objects
