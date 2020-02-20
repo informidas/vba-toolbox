@@ -335,7 +335,7 @@ The real power of a subroutine is in its ability to take input parameter (known 
 > ' In this example we modify the **HelloWorld()** subroutine to accept an argument labeled as *first_name*. We defined the *first_name*
 > ' parameter as a string
 >
-> Sub HelloWorld(first_name as string)
->    msgbox "Hello " + sName + "!"
-> End Sub
+> Sub HelloWorld(first_name as string) <br />
+>    msgbox "Hello " + sName + "!"  <br/>
+> End Sub <br />
 >
