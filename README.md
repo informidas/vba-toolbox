@@ -332,10 +332,9 @@ Creating a subroutine begins with the keyword *Sub* and ends with the keywords *
 
 The real power of a subroutine is in its ability to take input parameter (known as an *argument*) and output a value or message (known as a *return value*) to the user. Using the HelloWord() subroutine example, we could modify the subroutine as follows: <br /><br />
 
-> ' In this example we modify the **HelloWorld()** subroutine to accept an argument labeled as *first_name*. We defined the *first_name*
-> ' parameter as a string
+>   ' In this example we modify the **HelloWorld()** subroutine to accept an argument labeled as *first_name*. <br /> We defined the     >   *first_name* parameter as a string
 >
-> Sub HelloWorld(first_name as string) <br />
->    msgbox "Hello " + sName + "!"  <br/>
-> End Sub <br />
+>   Sub HelloWorld(first_name as string) <br />
+>      msgbox "Hello " + sName + "!"  <br/>
+>   End Sub <br />
 >
