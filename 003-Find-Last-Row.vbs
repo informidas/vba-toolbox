@@ -3,7 +3,9 @@
 'using the range method
 lastRow = range("A" & Rows.Count).End(xlUp).Row
 
+
 'using the cells method
 lastRow = cells(Rows.Count, 1).End(xlUp).Row
+
 
 
