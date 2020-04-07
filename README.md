@@ -61,10 +61,10 @@ Variables are typically declared inside of a Procedure or Function
 
 #### **Comments**
 Comments are used in VBA to give hints, guidance and documentation for what our code is doing at different steps along the way. Comments are extremely useful when other users are trying to read our code, as well as in helping the author revisit their code some time in the future. To create a comment in VBA, we type a single apostrophe ('), followed by the actual comment. For example: <br>
-
-> 'This is my first comment
-> 'This is my second comment
-
+<pre><code>
+ 'This is my first comment
+ 'This is my second comment
+</code></pre>
 Anything we type to the right of the *" ' "* symbol, the VBA interpreter will treat as a comment
 
 ##### **Printing Messages** - using the *MsgBox* keyword
@@ -335,5 +335,5 @@ The real power of a subroutine is in its ability to take input parameter (known 
 
    Sub HelloWorld(first_name as string) <br />
       msgbox "Hello " + sName + "!"  <br/>
-   End Sub <br />
+   End Sub 
 </code></pre>
