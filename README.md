@@ -46,17 +46,17 @@ e.g. of snake case: first_name, last_name, phone_number, graduation_date
 **Declaring Variables in VBA** - using *Dim* keyword <br>
 *Dim* is the vba reserved word used to declare a variable. Dim is actually an abbreviation for the word *dimension*. In VBA we declare a variable as follows: <br>
 
->
-> Dim variable_name as variable_type
->
-
+<pre><code>
+$ Dim variable_name as variable_type
+$
+</code></pre>
 Here are some examples of variable declarations <br>
->
-> Dim first_name as string <br>
-> Dim age as integer <br>
-> Dim is_adult as boolean <br>
-> Dim dob as date <br>
->
+<pre><code>
+ Dim first_name as string <br>
+ Dim age as integer <br>
+ Dim is_adult as boolean <br>
+ Dim dob as date <br>
+</code></pre>
 
 Variables are typically declared inside of a Procedure or Function
 
