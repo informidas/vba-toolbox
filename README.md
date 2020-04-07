@@ -48,7 +48,6 @@ e.g. of snake case: first_name, last_name, phone_number, graduation_date
 
 <pre><code>
  Dim variable_name as variable_type
-
 </code></pre>
 Here are some examples of variable declarations <br>
 <pre><code>
@@ -77,9 +76,9 @@ In VBA, we use the *MsgBox* built-in function to print / output a message to the
 A subroutine (or sub) is a procedure or package of vba code consisting of one or more statements that get executed when the sub is run / called. The format for a subroutine is as follows: <br>
 
 <pre><code> 
- *Sub Name-of-the-Sub():*
+ Sub Name-of-the-Sub():
 
- *End Sub*
+ End Sub
 </code></pre>
 
 In between the *Sub* and the *End Sub* lines, we write the vba statements to be executed.
@@ -88,9 +87,9 @@ In between the *Sub* and the *End Sub* lines, we write the vba statements to be 
 A Function is similar to a subroutine in structure. Typically a function is used when we would like to return a value as the direct output of the program, which can then be used by another subroutine or function. The format for declaring a Function is:
 
 <pre><code>
- *Function Name-of-Function() as return type* 
+ Function Name-of-Function() as return type 
 
- *End Function* 
+ End Function
 </code></pre>
 
 In between the *Function* and the *End Function* lines, we write the vba statements to be executed.
@@ -107,7 +106,6 @@ Arguments are parameters that are passed into Subroutines and Functions as varia
  We would like the subroutine to print a hello message using the person's first name. <br>
  So if I type *John* for the first name the program should print: <br>
  *Hello John*. How would we do this? Here is a possible solution using a subroutine<br>
- 
  <pre><code>
   Sub PrintName(first_name as string)
  
@@ -130,7 +128,6 @@ Frequently when we provide a solution VBA, we need to iterate over a range of  c
 
 #### For Each Next
 The for each next structure can be used when working with a collection / group of worksheets in a workbook. For example, let us say I have 5 sheets in a workbook labeled *sheet1, sheet2, sheet3, sheet4 abd sheet5*. If we needed to some kind of processing to all these sheets we could use a loop structure like this: <br>
-
 <pre><code>
  For Each ws in Worksheets
   'do the processing here
@@ -198,7 +195,6 @@ Some of the most frequently used Variable Types are:
 * currency
 
 Using some of the popular datatypes you could define variables as follows: <br>
-
 <Pre><code>
  Dim fullname as string <br>
  Dim age as integer <br>
@@ -222,7 +218,6 @@ An important part of programming is printing messages to the screen to interact 
 
 <pre><code>
   msgbox("your message goes here between the quotes")
-
 </code></pre>
 
 #### Objects, Methods and Properties
@@ -239,7 +234,6 @@ For example if we needed to reference the cell C4 we would type: <br>
 since we want the 4th row of the 3rd column.<br> 
 
 Below are examples of using the range and cell options for adding a heading **Product** in cell A1 we type:
-
 <pre><code>
  *range("A1").value = "Product"* <br>
  *cells(1,1).value = "Product"*
@@ -298,7 +292,6 @@ Suppose we needed to add the state abbreviation in column C, based on the data i
 
 **Example**
 Let's say we wanted to use an Array to store the days of a week, we would do the following:
-
 <pre><code>
  ' declare the array
  Dim DaysOfWeek(6) as string
@@ -314,7 +307,6 @@ Let's say we wanted to use an Array to store the days of a week, we would do the
 </code></pre>
 
 Alternately, all assignments could be performed in a single statement.
-
 <pre><code>
  DaysOfWeek = ("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
 </code></pre>
@@ -339,7 +331,7 @@ Creating a subroutine begins with the keyword *Sub* and ends with the keywords *
 The real power of a subroutine is in its ability to take input parameter (known as an *argument*) and output a value or message (known as a *return value*) to the user. Using the HelloWord() subroutine example, we could modify the subroutine as follows: <br /><br />
 
 <pre><code>
-  ' In this example we modify the **HelloWorld()** subroutine to accept an argument labeled as *first_name*. <br /> We defined the     *first_name* parameter as a string
+  ' In this example we modify the **HelloWorld()** subroutine to accept an argument labeled as first_name. <br /> We defined the     first_name parameter as a string
 
    Sub HelloWorld(first_name as string) <br />
       msgbox "Hello " + sName + "!"  <br/>
