@@ -47,8 +47,8 @@ e.g. of snake case: first_name, last_name, phone_number, graduation_date
 *Dim* is the vba reserved word used to declare a variable. Dim is actually an abbreviation for the word *dimension*. In VBA we declare a variable as follows: <br>
 
 <pre><code>
-$ Dim variable_name as variable_type
-$
+ Dim variable_name as variable_type
+
 </code></pre>
 Here are some examples of variable declarations <br>
 <pre><code>
@@ -76,20 +76,22 @@ In VBA, we use the *MsgBox* built-in function to print / output a message to the
 #### **Sub**
 A subroutine (or sub) is a procedure or package of vba code consisting of one or more statements that get executed when the sub is run / called. The format for a subroutine is as follows: <br>
 
-> 
-> *Sub Name-of-the-Sub():*
->
-> *End Sub*
+<pre><code> 
+ *Sub Name-of-the-Sub():*
+
+ *End Sub*
+</code></pre>
 
 In between the *Sub* and the *End Sub* lines, we write the vba statements to be executed.
 
 #### **Function**
 A Function is similar to a subroutine in structure. Typically a function is used when we would like to return a value as the direct output of the program, which can then be used by another subroutine or function. The format for declaring a Function is:
 
->
-> *Function Name-of-Function() as return type* 
->
-> *End Function* 
+<pre><code>
+ *Function Name-of-Function() as return type* 
+
+ *End Function* 
+</code></pre>
 
 In between the *Function* and the *End Function* lines, we write the vba statements to be executed.
 
@@ -106,20 +108,22 @@ Arguments are parameters that are passed into Subroutines and Functions as varia
  So if I type *John* for the first name the program should print: <br>
  *Hello John*. How would we do this? Here is a possible solution using a subroutine<br>
  
- >Sub PrintName(first_name as string)
- >
- >'print the hello message <br>
- >msgbox "Hello " + first_name
- >
- >End Sub
+ <pre><code>
+  Sub PrintName(first_name as string)
+ 
+  'print the hello message <br>
+  msgbox "Hello " + first_name
+ 
+  End Sub
+ </code></pre>
 
  If we wanted to use a Function to solve the same challenge we could do the following: <br>
- 
- > Function PrintName(first_name as string) as string
- >    PrintName = "Hello " + first_name
- >  return PrintName
- > End Function 
-
+ </code></pre>
+  Function PrintName(first_name as string) as string
+    PrintName = "Hello " + first_name
+    return PrintName
+  End Function 
+</code></pre>
 
 ### Looping Structures
 Frequently when we provide a solution VBA, we need to iterate over a range of  cells, rows and columns. VBA provides Looping structures to help when we need to process a collection of cells, rows, columns and worksheets.
@@ -127,12 +131,13 @@ Frequently when we provide a solution VBA, we need to iterate over a range of  c
 #### For Each Next
 The for each next structure can be used when working with a collection / group of worksheets in a workbook. For example, let us say I have 5 sheets in a workbook labeled *sheet1, sheet2, sheet3, sheet4 abd sheet5*. If we needed to some kind of processing to all these sheets we could use a loop structure like this: <br>
 
-> For Each ws in Worksheets
->  'do the processing here
-> Next ws 
+<pre><code>
+ For Each ws in Worksheets
+  'do the processing here
+ Next ws 
+</code></pre>
 
-The *Next ws* statement is teh instruction to move to the next sheet
-
+The *Next ws* statement gives the instruction to move to the next sheet
 
 
 ### Best Practices
@@ -194,30 +199,31 @@ Some of the most frequently used Variable Types are:
 
 Using some of the popular datatypes you could define variables as follows: <br>
 
-> Dim fullname as string <br>
-> Dim age as integer <br>
-> Dim salary as currency <br>
-> Dim DOB as date <br>
-> Dim hasDegree as boolean <br>
-> 
+<Pre><code>
+ Dim fullname as string <br>
+ Dim age as integer <br>
+ Dim salary as currency <br>
+ Dim DOB as date <br>
+ Dim hasDegree as boolean <br>
+</code></pre> 
 
 ##### Generating Comments
 It is a good coding practice to include comments in your code. Comments provide a way for others reviewing your code to understand the intent of each statement in particular and your program in general. We declare a line of comment using a single apostrophe (')
 
 Here is how you can declare a comment:
->
-> ' This is a comment
->
-> ' This is a second comment
->
+<pre><code>
+ ' This is a comment
+
+ ' This is a second comment
+</code></pre>
 
 #### Printing Messages to the screen
 An important part of programming is printing messages to the screen to interact with users. In VBA, we print messages to the screen using message boxes. To generate a message box, type the following:
 
->
-> msgbox("your message goes here between the quotes")
->
->
+<pre><code>
+  msgbox("your message goes here between the quotes")
+
+</code></pre>
 
 #### Objects, Methods and Properties
 Another important concept to remember when programming in VBA is that everything is based on a hierarchy of objects. The hierarchy for Microsoft Excel is as follows:
@@ -234,22 +240,23 @@ since we want the 4th row of the 3rd column.<br>
 
 Below are examples of using the range and cell options for adding a heading **Product** in cell A1 we type:
 
->
-> *range("A1").value = "Product"* <br>
-> *cells(1,1).value = "Product"*
->
+<pre><code>
+ *range("A1").value = "Product"* <br>
+ *cells(1,1).value = "Product"*
+</code></pre>
 
 #### Loops and Iterators
 Loops are useful VBA constructs when we need to iterate through a list or collection of items. While there are a number of Loop constructs we will focus on using the For Loop construct.<br>
  
 ##### Using a For Loop
 The structure of a For Loop is as follows: <br>
->
-> For i = x to y 
->   *do some step 1*  <br>
->   *do step 2*  <br>
->   *do step 3 etc*  
-> Next i
+<pre><code>
+ For i = x to y 
+   *do some step 1*  <br>
+   *do step 2*  <br>
+   *do step 3 etc*  
+ Next i
+</code></pre>
 - *i* is considered an iterator <br>
 - *x* is considered the lower boundary or where the loop will begin from  <br>
 - *y* is considered the upper boundary or where the loop will stop <br>
@@ -259,27 +266,27 @@ Let's use an example to illustrate. <br>
 Suppose we needed to add the state abbreviation in column C, based on the data in column B how could we do this using a loop? <br>
 
 ![State_Abbreviation](https://github.com/informidas/vba-basic-documentation/blob/master/State_Abbreviation.PNG "table used in For Loop example") <br>
->
-> Sub AddStateAbbrev()
->    Dim i As Integer
->    
->    For i = 2 To 8
->    
->        If Cells(i, 2).Value = "New Jersey" Then
->            Cells(i, 3).Value = "NJ"
->            
->        ElseIf Cells(i, 2).Value = "New York" Then
->            Cells(i, 3).Value = "NY"
->            
->        ElseIf Cells(i, 2).Value = "Connecticut" Then
->            Cells(i, 3).Value = "CT"
->            
->        End If
->    
->    Next i
->    
-> End Sub
->
+<pre><code>
+ Sub AddStateAbbrev()
+    Dim i As Integer
+    
+    For i = 2 To 8
+    
+        If Cells(i, 2).Value = "New Jersey" Then
+            Cells(i, 3).Value = "NJ"
+            
+        ElseIf Cells(i, 2).Value = "New York" Then
+            Cells(i, 3).Value = "NY"
+            
+        ElseIf Cells(i, 2).Value = "Connecticut" Then
+            Cells(i, 3).Value = "CT"
+            
+        End If
+    
+    Next i
+    
+ End Sub
+</code></pre>
 
 
 #### Arrays
@@ -292,49 +299,49 @@ Suppose we needed to add the state abbreviation in column C, based on the data i
 **Example**
 Let's say we wanted to use an Array to store the days of a week, we would do the following:
 
->
-> ' declare the array
->
-> Dim DaysOfWeek(6) as string
-> 
-> ' Assign the days of week to each element in the array:
->
-> DaysOfWeek(0) = "Mon"
-> DaysOfWeek(1) = "Tue"
-> DaysOfWeek(2) =  "wed"
-> DaysOfWeek(3) = "Thu"
-> DaysOfWeek(4) = "Fri"
-> DaysOfWeek(5) = "Sat"
-> DaysOfWeek(6) = "Sun"
+<pre><code>
+ ' declare the array
+ Dim DaysOfWeek(6) as string
+ 
+ ' Assign the days of week to each element in the array:
+ DaysOfWeek(0) = "Mon"
+ DaysOfWeek(1) = "Tue"
+ DaysOfWeek(2) =  "wed"
+ DaysOfWeek(3) = "Thu"
+ DaysOfWeek(4) = "Fri"
+ DaysOfWeek(5) = "Sat"
+ DaysOfWeek(6) = "Sun"
+</code></pre>
 
 Alternately, all assignments could be performed in a single statement.
 
->
-> DaysOfWeek = ("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
->
+<pre><code>
+ DaysOfWeek = ("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
+</code></pre>
 
 Once an array has been declared and assigned values we can now reference in the remainder of Our subroutine or program.
 We reference elements as follows:
->
-> Msgbox("The first day of the week is: " + DaysOfWeek(0) )
->
+<pre><code>
+ Msgbox("The first day of the week is: " + DaysOfWeek(0) )
+</code></pre>
 
 #### Subroutines
 A Subroutine is a block of code (i.e. series of vba statements or commands). This subroutine when executed will run all statements in the block.
 
 Creating a subroutine begins with the keyword *Sub* and ends with the keywords *End Sub* . Below is an example of a subroutine.
 
->
 ##### Declaring a Subroutine
-> Sub HelloWorld()
->    msgbox "Hello World!"
-> End Sub
+<pre><code>
+ Sub HelloWorld()
+    msgbox "Hello World!"
+ End Sub
 
 The real power of a subroutine is in its ability to take input parameter (known as an *argument*) and output a value or message (known as a *return value*) to the user. Using the HelloWord() subroutine example, we could modify the subroutine as follows: <br /><br />
 
->   ' In this example we modify the **HelloWorld()** subroutine to accept an argument labeled as *first_name*. <br /> We defined the *first_name* parameter as a string
->
->   Sub HelloWorld(first_name as string) <br />
->      msgbox "Hello " + sName + "!"  <br/>
->   End Sub <br />
->
+<pre><code>
+  ' In this example we modify the **HelloWorld()** subroutine to accept an argument labeled as *first_name*. <br /> We defined the     *first_name* parameter as a string
+
+   Sub HelloWorld(first_name as string) <br />
+      msgbox "Hello " + sName + "!"  <br/>
+   End Sub <br />
+</code></pre>
