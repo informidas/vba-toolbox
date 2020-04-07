@@ -59,19 +59,6 @@ Here are some examples of variable declarations <br>
 
 Variables are typically declared inside of a Procedure or Function
 
-#### **Comments**
-Comments are used in VBA to give hints, guidance and documentation for what our code is doing at different steps along the way. Comments are extremely useful when other users are trying to read our code, as well as in helping the author revisit their code some time in the future. To create a comment in VBA, we type a single apostrophe ('), followed by the actual comment. For example: <br>
-<pre><code>
- 'This is my first comment
- 'This is my second comment
-</code></pre>
-Anything we type to the right of the *" ' "* symbol, the VBA interpreter will treat as a comment
-
-##### **Printing Messages** - using the *MsgBox* keyword
-In VBA, we use the *MsgBox* built-in function to print / output a message to the screen. It takes one mandatory input parameter for a message string, as well as a number of other optional parameters 
-
-
-
 #### **Sub**
 A subroutine (or sub) is a procedure or package of vba code consisting of one or more statements that get executed when the sub is run / called. The format for a subroutine is as follows: <br>
 
@@ -204,8 +191,8 @@ Using some of the popular datatypes you could define variables as follows: <br>
 </code></pre> 
 
 ##### Generating Comments
-It is a good coding practice to include comments in your code. Comments provide a way for others reviewing your code to understand the intent of each statement in particular and your program in general. We declare a line of comment using a single apostrophe (')
-
+It is a good coding practice to include comments in your code. Comments are used in VBA to give hints, guidance and documentation for what our code is doing at different steps along the way. Comments are also extremely useful when other users are trying to read our code, as well as in helping the author revisit their code some time in the future. To declare a line of comment in VBA, we type a single apostrophe ('), followed by the actual comment. Anything to the right of the *" ' "* symbol, the VBA interpreter will treat as a comment.
+<br>
 Here is how you can declare a comment:
 <pre><code>
  ' This is a comment
@@ -213,8 +200,10 @@ Here is how you can declare a comment:
  ' This is a second comment
 </code></pre>
 
-#### Printing Messages to the screen
-An important part of programming is printing messages to the screen to interact with users. In VBA, we print messages to the screen using message boxes. To generate a message box, type the following:
+ For example: <br>
+
+#### Printing Messages to the screen (Using MsgBox keyword)
+An important part of programming is printing messages to the screen to interact with users. In VBA, we print messages to the screen using mthe *MsgBox* built-in function. It takes one mandatory input parameter for a message string, as well as a number of other optional parameters. <br>To generate a message box, type the following:
 
 <pre><code>
   msgbox("your message goes here between the quotes")
