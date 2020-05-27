@@ -17,7 +17,7 @@ ElseIf (next test...) Then
 
 Else: 
 
-  'do these things if none of teh above test were True
+'do these things if none of the above test were True
 
 End If
 
