@@ -1,6 +1,6 @@
 'Use FileDialog Object to reference a set of files to be processed
 
-<pre>Dim fd As FileDialog
+<pre><code>Dim fd As FileDialog
  
  'Create a FileDialog object as a File Picker dialog box.
  Set fd = Application.FileDialog(msoFileDialogFilePicker)
@@ -74,4 +74,4 @@
  Else
  End If
  End With
- </pre>
+ </code></pre>
