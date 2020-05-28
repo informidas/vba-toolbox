@@ -39,11 +39,11 @@ Dim fd As FileDialog
     
     Set rng = wks.Range("A1")
     
-    ' **find the last column in the dataset**
+    ' find the last column in the dataset
     lastCol = Cells(1, Columns.Count).End(xlToLeft).Column
    
     
-    '**find the last row in the dataset**
+    'find the last row in the dataset
     lastRow = Cells(Rows.Count, 1).End(xlUp).Row
     
         
