@@ -3,7 +3,7 @@
 <pre><code>
 Dim fd As FileDialog
  
- '**Create a FileDialog object as a File Picker dialog box.**
+ **'Create a FileDialog object as a File Picker dialog box.**
  
  Set fd = Application.FileDialog(msoFileDialogFilePicker)
  
